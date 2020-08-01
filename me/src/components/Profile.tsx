@@ -7,6 +7,9 @@ class Profile extends React.Component {
   render() {
     const profileStyle = {
       padding: "100px",
+      paddingRight: "100px",
+      paddingLeft: "100px",
+      height: "150px",
     };
     return (
       <div style={profileStyle}>
