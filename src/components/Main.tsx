@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Layout } from "antd";
 import HeaderBar from "./headerBar";
 import Profile from "./Profile";
+import { Row, Col, Divider, Space } from "antd";
+import Skills from "./Myskills";
+import PortFolio from "./Portfolio";
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -13,7 +16,16 @@ class MainPart extends React.Component {
           <HeaderBar />
         </Header>
         <Content style={{ padding: "0 50px", marginTop: 64 }}>
-          <Profile />
+          <Row>
+            <Profile></Profile>
+          </Row>
+          <Row gutter={[48, 52]} align="bottom">
+            <Skills />
+          </Row>
+
+          <Row align="bottom">
+            <PortFolio />
+          </Row>
         </Content>
         <Footer>Footer</Footer>
       </Layout>

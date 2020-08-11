@@ -10,10 +10,10 @@ export interface ProfileProps {}
 
 const Profile: React.SFC<ProfileProps> = () => {
   const profileStyle = {
-    padding: "100px",
-    paddingRight: "100px",
-    paddingLeft: "100px",
-    height: "150px",
+    // padding: "100px",
+    // paddingRight: "100px",
+    // paddingLeft: "100px",
+    // height: "150px",
   };
 
   const DemoBox = (props: any) => (
@@ -47,37 +47,38 @@ const Profile: React.SFC<ProfileProps> = () => {
 
   return (
     <div style={profileStyle}>
-      <Card hoverable style={{ width: 1050 }}>
-        <Row justify="space-around" align="middle">
-          <Col span={6}>
-            <img style={{ width: "65%", height: "90%" }} src={Profilepic} />
-          </Col>
-          <Col span={18}>
-            <Row align="top">
-              <Badge.Ribbon placement="start" text="Hi There"></Badge.Ribbon>
-              <DemoBox value={50}>.</DemoBox>
-            </Row>
-            <Row>
-              <Title level={3}>I'm </Title>
+      <Row gutter={[48, 100]}>
+        <Card hoverable style={{ width: 1050 }}>
+          <Row justify="space-around" align="middle">
+            <Col span={6}>
+              <img style={{ width: "65%", height: "90%" }} src={Profilepic} />
+            </Col>
+            <Col span={18}>
+              <Row align="top">
+                <Badge.Ribbon placement="start" text="Hi There"></Badge.Ribbon>
+                <DemoBox value={50}>.</DemoBox>
+              </Row>
+              <Row>
+                <Title level={3}>I'm </Title>
 
-              <Title>Samuli Haverinen</Title>
-            </Row>
-            <Row>
-              <Text strong>Full-Stack Web developer and Freelancer</Text>
-            </Row>
-            <Divider />
+                <Title>Samuli Haverinen</Title>
+              </Row>
+              <Row>
+                <Text strong>Full-Stack Web developer and Freelancer</Text>
+              </Row>
+              <Divider />
 
-            <Contact />
-          </Col>
-        </Row>
-        <Row style={style} justify="space-around" align="middle">
-          <DemoBox value={200}>.</DemoBox>
+              <Contact />
+            </Col>
+          </Row>
+          <Row style={style} justify="space-around" align="middle">
+            <DemoBox value={200}>.</DemoBox>
 
-          <div className="col-12"> Contacts insta git and</div>
-        </Row>
-      </Card>
-      <Space size={200}></Space>
-      <Row>
+            <div className="col-12"> Contacts insta git and</div>
+          </Row>
+        </Card>
+      </Row>
+      <Row gutter={[48, 50]}>
         Hi! I'm Samuli Haverinen. An experienced web developer, software
         architect and consultant. I'm very familiar with Microsoft .NET
         framework, modern client-side frameworks and both SQL and No-SQL
