@@ -79,12 +79,14 @@ const Profile: React.SFC<ProfileProps> = () => {
         </Card>
       </Row>
       <Row gutter={[48, 50]}>
-        Hi! I'm Samuli Haverinen. An experienced web developer, software
-        architect and consultant. I'm very familiar with Microsoft .NET
-        framework, modern client-side frameworks and both SQL and No-SQL
-        databases. I've built a bunch of websites running in the cloud,
-        participated in product development at startups and consulted some of
-        the biggest companies in Finland.
+        <Col span={20}>
+          Hi! I'm Samuli Haverinen. An experienced web developer, software
+          architect and consultant. I'm very familiar with Microsoft .NET
+          framework, modern client-side frameworks and both SQL and No-SQL
+          databases. I've built a bunch of websites running in the cloud,
+          participated in product development at startups and consulted some of
+          the biggest companies in Finland.
+        </Col>
       </Row>
     </div>
   );
