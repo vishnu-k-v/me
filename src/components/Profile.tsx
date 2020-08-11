@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, Badge, Typography } from "antd";
 import Profilepic from "../Assets/Images/Profile.jpg";
-import { Row, Col, Divider, Space } from "antd";
+import { Row, Col, Divider, Space, Button } from "antd";
 
 const { Meta } = Card;
 const { Title, Text } = Typography;
@@ -86,6 +86,11 @@ const Profile: React.SFC<ProfileProps> = () => {
           databases. I've built a bunch of websites running in the cloud,
           participated in product development at startups and consulted some of
           the biggest companies in Finland.
+        </Col>
+      </Row>{" "}
+      <Row gutter={[48, 50]}>
+        <Col span={20}>
+          <Button size="large">Get In Touch</Button>
         </Col>
       </Row>
     </div>
